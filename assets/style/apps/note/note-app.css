@@ -1,0 +1,13 @@
+.note-app {
+    /* padding: 1rem; */
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-mail-background);
+    justify-content: center;
+    align-items: center;
+}
+
+audio {
+    width: 100%;
+    background-color: transparent;
+}

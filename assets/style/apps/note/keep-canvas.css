@@ -1,0 +1,39 @@
+.keep-canvas {
+    display: grid;
+    justify-content: center;
+    z-index: 100;
+    /* background-color: aqua; */
+}
+
+.canvas-container {
+    display: grid;
+    justify-content: center;
+}
+
+.canvas-container {
+    height: 75vh;
+    width: 100vw;
+}
+
+.keep-canvas .my-canvas {
+    border: 2px solid grey;
+}
+
+.canvas-nav {
+    width: 100%;
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    padding: 0 50px;
+}
+
+.canvas-nav span {
+    opacity: .8;
+    transition: .5s;
+}
+
+.canvas-nav span:hover {
+    opacity: 1;
+    cursor: pointer;
+}

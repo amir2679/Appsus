@@ -1,0 +1,19 @@
+.user-msg {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 290px;
+    background-color: var(--clr-mail-light-secondary);
+    padding: 10px;
+    border-radius: 16px;
+    opacity: 0.9;
+    text-align: center;
+    z-index: 1500;
+    font-family: 'ProductSans-Medium';
+}
+.success {
+    background-color: var(--clr-mail-light-secondary);
+}
+.error {
+    background-color: rgb(194, 131, 131);
+}

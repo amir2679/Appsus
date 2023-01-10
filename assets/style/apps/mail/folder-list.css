@@ -1,0 +1,30 @@
+.email-folder {
+    height: 32px;
+    width: 200px;
+    margin-inline-start: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-inline: 30px;
+}
+
+.email-folder img {
+    margin-inline-end: 30px;
+}
+
+.folder-container {
+    transition: 0.4s;
+}
+
+.folder-container.folder-hover {
+    background-color: #DADCE0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+}
+
+.folder-container.folder-selected {
+    background-color: var(--clr-mail-secondary);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}

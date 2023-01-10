@@ -1,0 +1,42 @@
+.keep-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    padding-right: 50px;
+    border-bottom: 1px solid rgb(157 143 143 / 45%);
+    padding-inline-start: 90px;
+    width: 100%;
+    padding-inline-start: 50px;
+    
+}
+
+.keep-header input {
+    /* border: 2px solid rgb(207, 204, 204); */
+    box-shadow: 0px 0px 2px 0px;
+    border-radius: 20px;
+    max-width: 500px;
+    flex-grow: 1;
+}
+
+.keep-header .side-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-inline-end: 10px;
+}
+
+.keep-header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.keep-header span {
+    font-size: 1.5rem;
+}
+
+.keep-header img {
+    height: 80%;
+    object-fit: cover;
+
+}

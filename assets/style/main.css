@@ -1,0 +1,45 @@
+/* Setup */
+@import './setup/vars.css';
+@import 'setup/typography.css';
+@import './setup/reset.css';
+
+/* Base */
+@import 'base/base.css';
+@import 'base/helpers.css';
+@import 'base/layout.css';
+@import 'base/forms.css';
+
+/* General Components */
+@import 'cmps/home-page.css';
+@import 'cmps/about-page.css';
+@import 'cmps/app-header.css';
+@import 'cmps/user-msg.css';
+
+/* Apps */
+/* @import 'apps/mail/mail-app.css'; */
+
+
+
+
+@import './apps/mail/email-app.css';
+
+@import './apps/mail/email-header.css';
+@import './apps/mail/email-search.css';
+@import './apps/mail/email-list.css';
+@import './apps/mail/email-preview.css';
+@import './apps/mail/email-details.css';
+@import './apps/mail/folder-list.css';
+
+
+@import './apps/note/note-app.css';
+@import './apps//note/note-list.css';
+@import './apps//note/note-preview.css';
+@import './apps/note/note-app-header.css';
+@import './apps/note/note-details.css';
+@import './apps/note/note-add.css';
+@import './apps/note/note-edit-toolbar.css';
+@import './apps/note/keep-header.css';
+@import './apps/note/keep-side.css';
+@import './apps//note/main-layout.css';
+@import './apps/note/keep-canvas.css';
+

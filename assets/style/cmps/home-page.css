@@ -1,0 +1,99 @@
+.home-page .about {
+    min-height: calc(60vh - 80px);
+    background-color: var(--clr-mail-light-secondary);
+    position: relative;
+}
+
+.home-page .about h3 {
+    font-size: 2rem;
+    font-family: 'ProductSans-Bold';
+    padding: 0;
+    padding-inline: 50px;
+    padding-block-start: 70px;
+}
+
+.home-page .about p {
+    padding-inline: 50px;
+    font-family: 'ProductSans-light';
+    font-size: 1.2rem;
+}
+
+.home-page .about p:last-child {
+    font-family: 'ProductSans-Bold';
+    display: inline-block;
+    padding: 10px;
+    border-radius: 25px;
+    margin-inline-start: 50px;
+    margin-block-start: 50px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.home-page .about .mail {
+    background-color: var(--clr-mail-primary);  
+    box-shadow: 1px 1px 1px var(--clr-mail-primary);   
+}
+
+.home-page .about .keep {
+    background-color: #feefc3;
+    box-shadow: 1px 1px 1px  #feefc3;;  
+}
+
+.home-page .about .books {
+    background-color: #bdbdbd;
+    box-shadow: 1px 1px 1px #bdbdbd;
+}
+
+.home-page .about .mail:hover {
+    box-shadow: 1px 1px 7px var(--clr-mail-primary);   
+}
+
+.home-page .about .keep:hover {
+    box-shadow: 1px 1px 7px #ffd864; 
+}
+
+.home-page .about .books:hover {
+    box-shadow: 1px 1px 7px #bdbdbd;
+}
+
+.home-page .img-container {
+    height: 40vh;
+    transition: 1s;
+}
+
+.home-page .img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    animation: imgOpacity 9s infinite normal forwards;
+}
+
+@keyframes imgOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.home-page .home-page-img  {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width: 1600px) {
+    .home-page .home-page-img {
+        display: none;
+    }
+}

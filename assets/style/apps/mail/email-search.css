@@ -1,0 +1,13 @@
+.email-search {
+    flex-grow: 1;
+    margin-inline-end: 30px;
+}
+
+.email-search input {
+    width: 100%;
+    height: 50px;
+    max-width: 720px;
+    background-color: var(--clr-mail-light-secondary);
+    border-radius: 10px;
+}
+

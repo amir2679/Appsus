@@ -1,0 +1,60 @@
+@import './email-header.css';
+@import './compose-mail.css';
+
+
+
+.email-app-container {
+    background-color: var(--clr-mail-background);
+    font-family: ProductSans-Medium;
+}
+
+.email-app-container {  
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 60px 84px 1fr;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "email-logo main-header-features"
+      "email-folder-list email-list"
+      "email-folder-list email-list";
+}
+  
+.email-list { 
+    grid-area: email-list;
+    display: block;
+    overflow-y: auto;
+}
+  
+.email-logo { grid-area: email-logo; }
+  
+.main-header-features { grid-area: main-header-features; }
+  
+.email-folder-list { grid-area: email-folder-list; }
+
+
+@media screen and (max-width: 980px) {
+    .email-app-container {  
+        grid-template-columns: 200px 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .email-folder-list {
+        position: fixed;
+        z-index: 150;
+        top: 184px;
+        left: -1000px;
+        background-color: var(--clr-mail2);
+        width: 80%;
+        height: 100vh;
+        box-shadow: 0.0001px 13px 9px 0px black;
+        padding-inline-end: 30px;
+        transition: 0.4s;
+    }
+    .email-app-container {  
+        display: block;
+    }
+}
+
+  

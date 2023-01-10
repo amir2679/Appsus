@@ -1,0 +1,90 @@
+.note-txt-preview {
+    padding: 5px;
+}
+
+.note-txt-preview li {
+    display: flex;
+    /* display: inline; */
+}
+
+.note-video-preview iframe{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.note-img-preview {
+    padding: 5px;
+}
+
+.note-img-preview img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.note-video-preview {
+    padding: 5px;
+}
+
+.note-preview {
+    text-overflow: ellipsis;
+    break-inside: avoid;
+    border: 1px solid rgb(162, 161, 161);
+    transition: .4s;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.note-preview:hover {
+    box-shadow: 0px 1px 2px 0px;
+    /* scale: 1.05; */
+    cursor: pointer;
+}
+
+.note-preview .toolbar {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.note-preview:hover .toolbar{
+    opacity: 1;
+    visibility: visible;
+}
+
+.note-preview:hover::after .toolbar{
+    opacity: 1;
+    visibility: visible;
+}
+
+.mark {
+    text-decoration: line-through;
+}
+
+.todo-done {
+    text-decoration: line-through;
+}
+
+.todos-preview li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.todos-preview {
+    padding: 10px;
+}
+
+.note-preview h1,
+.note-preview h2,
+.note-preview h3,
+.note-preview h4,
+.note-preview h5,
+.note-preview h6 {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.note-preview h2 {
+    font-size: 1.5rem;
+    word-wrap: break-word;
+}

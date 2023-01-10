@@ -1,0 +1,135 @@
+.email-list thead {
+    display: block;
+}
+
+.headlines-container {  
+    display: grid;
+    grid-template-columns: 20px 20px 200px 1fr 55.6px;
+    grid-template-rows: 40px;
+    grid-auto-rows: 40px;
+    gap: 0px 10px;
+    grid-auto-flow: row;
+    align-items: center;
+    grid-template-areas:
+      ". . . . .";
+    align-items: center; 
+    transition: 0.4s;
+    padding: 10px;
+}
+
+
+
+.email-container {  
+    display: grid;
+    grid-template-columns: 20px 20px 200px 1fr 55.6px;
+    grid-template-rows: 40px;
+    grid-auto-rows: 40px;
+    gap: 0px 10px;
+    grid-auto-flow: row;
+    align-items: center;
+    grid-template-areas:
+      ". . . . .";
+    align-items: center; 
+    border-bottom: 0.1px var(--clr-mail1) solid;
+    transition: 0.4s;
+    
+}
+
+.emails-container {
+    width: 100%;
+    display: block;
+    height: calc(100vh - 199px);
+}
+
+.headlines-container td {
+    height: 40px;
+}
+
+.headlines-container td:last-child, .email-container td:last-child {
+    align-self: center;
+}
+
+.headline {
+    cursor: pointer;
+}
+
+.sort-icon {
+    height: 20px;
+}
+
+.unread-counter-container {
+    background-color: #DADCE0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 32px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin-block: 10px;
+}
+
+.unread-counter-container .filler {
+    /* width: 50px; */
+    background-color: #8198c7;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unread-counter-container p {
+    margin: 0;
+    margin-inline-end: 10px;
+    padding: 15px;
+}
+
+.email-list .overlay {
+    display: none;
+}
+
+.email-list .overlay {
+    width: 100%;
+    height: calc(100vh - 184px);
+    background-color: #0000004f;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    transition: 0.4s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.email-list .overlay.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media screen and (max-width: 980px) {
+    .email-container {  
+        grid-template-columns: 20px 20px 100px 1fr 55.6px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .headlines-container {
+        position: fixed;
+        top: 184px;
+        left: 0;
+        z-index: 150;
+        background-color: var(--clr-mail-background);
+        width: 100%;
+        display: none;
+    }
+    .email-container {
+        position: relative;
+        top: 0;
+    }
+    .email-list .overlay {
+        display: block;
+    }
+}

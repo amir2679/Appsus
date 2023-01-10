@@ -1,0 +1,116 @@
+.toolbar {
+    padding: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.toolbar span {
+    transition: .3s;
+    opacity: .7;
+    min-width: 10px;
+}
+
+.toolbar span:hover {
+    cursor: pointer;
+    scale: 1.05;
+    opacity: 1;
+}
+
+.toolbar {
+    position: relative;
+}
+
+.toolbar .color-palate {
+    position: absolute;
+    bottom: -5px;
+    z-index: 1;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    background-color: rgb(216, 216, 216);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.options-btn {
+    position: relative;
+    background-color: inherit;
+}
+
+.options-btn .options-bar {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    z-index: 10;
+    background-color: var(--clr-mail-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    box-shadow: 0 0 1px;
+}
+
+.options-bar>* {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.details-toolbar {
+    /* background-color: rgb(204, 201, 201); */
+    position: relative;
+    z-index: 10;
+}
+
+
+.color-palate .color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.color-palate .color:hover {
+    border: 1px solid black;
+}
+
+.f28b82 {
+    background-color: #f28b82;
+}
+
+.fbbc04 {
+    background-color: #fbbc04;
+}
+
+.fff475 {
+    background-color: #fff475;
+}
+
+.ccff90 {
+    background-color: #ccff90;
+}
+
+.a7ffeb {
+    background-color: #a7ffeb;
+}
+
+.cbf0f8 {
+    background-color: #cbf0f8;
+}
+
+.aecbfa {
+    background-color: #aecbfa;
+}
+
+.d7aefb {
+    background-color: #d7aefb;
+}
+
+.fdcfe8 {
+    background-color: #fdcfe8;
+}
+
+.e8eaed {
+    background-color: #e8eaed;
+}

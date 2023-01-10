@@ -1,0 +1,25 @@
+.main-keep-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 50px 10px 90px;
+}
+
+.blur {
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+    /* background-color: aquamarine; */
+}
+
+.blur >*:not(.note-details) {
+    filter: blur(0.5rem);
+    /* opacity: .5; */
+}
+
+.unblur {
+    filter: blur(0);
+}
+
+.btn:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,71 @@
+.email-container {
+    position: relative;
+    padding: 10px;
+    font-family: ProductSans-Bold;
+}
+
+tr:first-of-type .email-container:first-of-type {
+    padding: 10px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+table .email-container td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+    height: 20px;
+}
+
+.email-container:hover {
+    box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0, 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.email-container .email-star-icon:hover, .email-container .email-bookmark-icon:hover {
+    filter: none;
+}
+
+
+.email-star-icon.unselected, .email-bookmark-icon.unselected {
+    filter: invert(81%) sepia(4%) saturate(215%) hue-rotate(175deg) brightness(94%) contrast(92%);
+    transition: 0.4s;
+}
+
+.read {
+    font-family: ProductSans-light;
+    background-color: var(--clr-mail-light-secondary);
+}
+
+.email-preview-actions {
+    position: absolute;
+    right: 0;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    display: none;
+    width: 100px;
+}
+
+.email-preview-actions span {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.email-preview-actions img {
+    height: 50%;
+    filter: invert(81%) sepia(4%) saturate(215%) hue-rotate(175deg) brightness(94%) contrast(92%);
+    transition: 0.4s;
+}
+
+.email-preview-actions img:hover {
+    filter: none;
+}
+
+.email-container:hover .email-preview-actions {
+    display: flex;
+}

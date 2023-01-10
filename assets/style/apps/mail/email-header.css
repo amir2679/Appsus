@@ -1,0 +1,28 @@
+.main-header-features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.main-header-features .mail-mobile-side-menu {
+    height: 40%;
+    margin-inline-end: 30px;
+    filter: invert(37%) sepia(6%) saturate(433%) hue-rotate(173deg) brightness(99%) contrast(88%);
+    display: none;
+}
+
+.email-logo {
+    margin-inline-start: 30px;
+    align-self: center;
+}
+
+@media screen and (max-width: 600px) {
+    .main-header-features {
+        flex-direction: row-reverse;
+        padding-inline: 30px;
+    }
+    .main-header-features .mail-mobile-side-menu {
+        display: block;
+    }
+}

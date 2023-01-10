@@ -1,0 +1,13 @@
+.note-list {
+    gap: 10px;
+    column-count: 6;
+    column-width: 300px;
+}
+
+.note-list >* {
+    margin-bottom: 10px;
+}
+
+.note-list.pinned {
+    padding-bottom: 10px;
+}
